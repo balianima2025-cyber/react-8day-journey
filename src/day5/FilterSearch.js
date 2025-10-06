@@ -1,7 +1,7 @@
 // FILTER & SEARCH - Advanced filtering dengan multiple criteria
 import { useState, useMemo } from 'react';
 import { products } from './data/mockData';
-import { users } from './data/mockData';
+
 
 const FilterSearch = () => {
   const [searchTerm, setSearchTerm] = useState('');

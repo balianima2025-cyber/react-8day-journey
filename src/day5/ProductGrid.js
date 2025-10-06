@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { products as initialProducts } from './data/mockData';
 
 const ProductGrid = () => {
-  const [products, setProducts] = useState(initialProducts);
+  const [products] = useState(initialProducts);
   const [sortBy, setSortBy] = useState('name'); // name, price, rating
 
   const sortedProducts = [...products].sort((a, b) => {
