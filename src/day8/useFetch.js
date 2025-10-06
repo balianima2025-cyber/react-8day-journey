@@ -29,7 +29,7 @@ const useFetch = (url, options = {}) => {
     if (url) {
       fetchData();
     }
-  },  [url, options]); 
+  }, [url]); // Re-fetch when URL changes
 
   return { data, loading, error, refetch: () => {} };
 };
